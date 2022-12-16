@@ -207,7 +207,7 @@ button{
 }
 .campus{
     position: relative;
-    margin-top: 3%;
+    margin-top: -4%;
     display: flex;
     align-items: center;
     padding-left: 2px;
@@ -255,289 +255,75 @@ button{
     
 
 }
+
 #textEmail{
     color: #ffffff;
     font-size: small;
     font-family: 'Times New Roman', Times, serif;
 }
+#form {
+    position: absolute;
+    flex-direction: column;
+    display: flex;
+    position: relative;
+    width: 300px;
+    margin: 20vh auto 0 auto;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+#form h1 {
+    color: #0f2027;
+    text-align: center;
+}
+
+#form button {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    color: white;
+    background-color: rgb(41, 57, 194);
+    border: none;
+    border-radius: 4px;
+}
+
+.input-control {
+    margin-bottom: 0%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-control input {
+    border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-size: 12px;
+	padding: 10px;
+	width: 90%;
+}
+
+.input-control input:focus {
+    outline: 0;
+}
+
+.input-control.success input {
+    border-color: #09c372;
+}
+
+.input-control.error input {
+    border-color: #ff3860;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}
 
 
 
-
-
-
-
-
-@media screen and (max-width: 750px) {
-    *{
-        margin: 0%; padding: 0%;
-    }
-    body{
-        display: block;
-        font-size: 30%;
-        line-height: 5px;
-        flex-direction: column;
-
-    }  
-    *{
-        margin: 0%; padding: 0%;
-      
-      }
-      
-      
-      .N1-KILA{
-          background-color: rgb(50, 50, 50);
-          height: 20px;
-          
-      }
-      .N1-KILA img{
-          position: absolute;
-          width: 16px;
-          height: 15px;
-          border-radius: 100%;
-          left: 8%;
-          top: 1px ;
-          align-items: center;
-      
-      }
-      .N1-KILA a{
-          position: relative;
-          text-decoration: none;
-          padding-left: 7px;
-          top: 6px;
-          left: 20%;
-          text-align: center;
-          align-items: center;
-          color: wheat;
-          text-transform: uppercase;
-          
-      
-          
-      }
-      .N2-KILA{
-          position: relative;
-          background-image: url(capa2.jpg);
-          height: PX;
-          width: 50%;
-      }
-      .N2-KILA img{
-          left: 10%;
-          top: 30px;
-          position: relative;
-          height: 50px;
-          width: 50px;
-          border-radius: 50%; 
-      }
-      .git img{
-          position: relative;
-          height: 15px;
-          width: 15px;
-          top: 22px;
-          right: 10px;
-          background-color: #994463;
-          border-color: black;
-          transition: all 0.5s;
-      }
-      .texto1 h1{
-          justify-content: center;
-          position: absolute;
-          right: 17%;
-          top: 110px;
-          font-size: 200%;
-          color: #7B7B7B;
-          font-family: 'Times New Roman', Times, serif;
-      }
-      .texto1 h3{
-          justify-content: center;
-          font-weight: 50;
-          position: absolute;
-          right: 20%;
-          top: 145px;
-          font-size: 100%;
-          color: #0e0c0c;
-          font-family: 'Times New Roman', Times, serif;
-      }
-      .texto1 h4{
-          justify-content: center;
-          font-weight: 50;
-          position: absolute;
-          right: 22%;
-          top: 150px;
-          font-size: 100%;
-          color: #0e0c0c;
-          font-family: 'Times New Roman', Times, serif;
-      }
-      .texto1 P{
-          justify-content: center;
-          text-align: justify;
-          font-weight: 25;
-          position: absolute;
-          right: 15%;
-          top: 140Px;
-          font-size: 50%;
-          color: #0e0c0c;
-          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-      }
-      .formação{
-          display: block;
-          font-weight: 20;
-          position: absolute;
-          margin-top: -25px;
-          text-align: center;
-          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      }
-      .N3-KILA{
-          height: 130PX;
-          width: 50%;
-          background-color: #DEDEDE;
-          top: 200px;
-          position: absolute;
-      }
-      
-      .N4-KILA{
-          height: 120PX;
-          width: 50%;
-          background-color: #434343;
-          top: 300px;
-          position: absolute;
-      }
-      .texto2 {
-          top: 12%;
-          position: absolute;
-          left: 17%;
-          align-items: center;
-          justify-content: right;
-          padding-left: 6px;  
-      }
-      .texto3{
-          top: 12%;
-          position: absolute;
-          left: 17%;
-          align-items: center;
-          justify-content: right;
-          padding-left: 6px;  
-          color: #ffffff;
-      
-      }
-      .experiência{
-          display: block;
-          font-weight: 10;
-          position: absolute;
-          margin-top: -25px;
-          text-align: center;
-          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      }
-      .N5-KILA{
-          display: inline;
-          height: 150PX;
-          width: 50%;
-          background-color: #DEDEDE;
-          top: 450px;
-          position: absolute;
-          align-items: center;
-          justify-content: center;
-          
-      }
-      
-      
-      .cardb{
-          position: relative;
-          margin-top: 1%;
-          display: flex;
-          justify-content:center;
-          align-items: center;
-          padding-left: 2px;
-          line-height: 10px;
-          
-      
-      }
-      .cardf{
-          position: relative;
-          width: 100px;
-          height: 50px;
-          margin-left: auto;
-          margin-right: auto;
-          background-color: #ffffff;
-          text-align: center;
-          border-radius: 5%;
-            
-      }
-      
-      button{
-          background-color: #434343;
-          color: #ffffff;
-          border-radius: 7%;
-          
-      }
-      
-      .ic{
-          width: 25px;
-          height: 40px;
-      }
-      .N6-KILA{
-          display: inline;
-          height: 250PX;
-          width: 50%;
-          background-color: #221f1f;
-          top: 1170px;
-          position: absolute;
-          align-items: center;
-          justify-content:space-around;
-          line-height: 20px;
-          
-      }
-      .campus{
-          position: relative;
-          margin-top: 3%;
-          display: flex;
-          align-items: center;
-          padding-left: 2px;
-          line-height: 20px;
-          color: #ffffff;
-          margin-left: auto;
-          margin-right: auto;
-          justify-content: space-around;
-          text-align:justify;
-      
-      }
-      .contactos{
-          display: block;
-          font-weight: 20;
-          position: absolute;
-          margin-top: -50px;
-          text-align: center;
-          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      }
-      .camada6{
-          text-align: center;
-          line-height: 40px;
-      }
-      .menu-mobile{
-          cursor: pointer;
-          display: none;
-          
-      }
-      .menu-mobile div{
-          width: 32px;
-          height:2px;
-          background: #fff;
-          margin: 8px;
-      }
-      .nav-list{
-          list-style: none;
-          display: flex;
-          align-items: center;
-          margin-left: 250px;
-      }
-      .nav-list li{
-          letter-spacing: 3px;
-          margin-left: 20px;
-          
-      }
-      #textEmail{
-          color: #ffffff;
-          font-size: small;
-          font-family: 'Times New Roman', Times, serif;
-      }
-}      
-      

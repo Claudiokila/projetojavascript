@@ -1,22 +1,56 @@
+const form = document.getElementById('form');
+const username = document.getElementById('username');
+const email = document.getElementById('email');
 
-let email = document.getElementById('email');
-let form = document.querySelector('form');
-let textEmail = document.getElementById('textEmail')
-let textform = document.getElementById('textform')
 
-form.addEventListener('submit' , (e)=>{
-    if(email.value == ''){
-        textEmail.textContent = 'você precisa preencher todos os campos!'
+form.addEventListener('submit', e => {
+    e.preventDefault();
 
+    validateInputs();
+});
+
+const setError = (element, message) => {
+    const inputControl = element.parentElement;
+    const errorDisplay = inputControl.querySelector('.error');
+
+    errorDisplay.innerText = message;
+    inputControl.classList.add('error');
+    inputControl.classList.remove('success')
+}
+
+const setSuccess = element => {
+    const inputControl = element.parentElement;
+    const errorDisplay = inputControl.querySelector('.error');
+
+    errorDisplay.innerText = '';
+    inputControl.classList.add('success');
+    inputControl.classList.remove('error');
+};
+
+const isValidEmail = email => {
+    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+}
+
+const validateInputs = () => {
+    const usernameValue = username.value.trim();
+    const emailValue = email.value.trim();
+   
+
+    if(usernameValue === '') {
+        setError(username, 'Escreva seu nome');
+    } else {
+        setSuccess(username);
     }
-    else{
-        console.log(email.value);
-        textEmail.textContent.changecolor('yellow') = "a tua menssagem foi enviada"
-        
+
+    if(emailValue === '') {
+        setError(email, 'É requerido um email');
+    } else if (!isValidEmail(emailValue)) {
+        setError(email, 'Escreva um email valido');
+    } else {
+        setSuccess(email);
     }
-    
-    
-    e.preventDefault()
-})
+}
 
 
+ 

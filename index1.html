@@ -136,21 +136,25 @@
                 </div>
                 <div class="camada7">
 
-                    <form name = "submit-to-google-sheet">
-                        <div>Nome</div>
-                        <input type="text" name="nome" placeholder="Nome" id="nome">
-                        <div>E-mail</div>
-                        <input type="email" name="E-mail" placeholder="exemplo@"  id="email">
-                        <small id="textEmail" ></small>
-                        <small id="textEmail2" ></small>
-                        <div>Assunto</div>
-                        <input type="text" title="Titulo" placeholder="" id="titulo">
-                        <div>Mensagem</div>
-                        <textarea name="mensagem" id="mensagem"  cols="30" rows="10" placeholder="menssagem"></textarea>
-                        <div></div>
-                        <button type="submit">Enviar</button>
-                        
-                    </form>
+                    <div class="container">
+                        <form id="form" action="/">
+                            <h1>Entre em contacto</h1>
+                            <div class="input-control">
+                                <label for="username">Nome de usuário</label>
+                                <input id="username" name="username" type="text" placeholder="Jhon" >
+                                <div class="error"></div>
+                            </div>
+                            <div class="input-control">
+                                <label for="email">Email</label>
+                                <input id="email" name="email" type="text" placeholder="example@">
+                                <div class="error"></div>
+                            </div>
+                            
+                            <div class="message">Mensagem</div>
+                            <textarea name="mensagem" id="mensagem"  cols="30" rows="10" placeholder="Escreva aqui a sua mensagem"></textarea>
+                            <button type="submit">Enviar</button>
+                        </form>
+                    </div>
 
                 </div>
 
